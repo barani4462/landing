@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+.banner{
+    width: 100%;
+    
+}
+.banner-image{
+    width: 100%;
+    padding: 10px;
+    margin: 4px 4px 1px 4px;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 0px 0px 2px 2px gray;
+  
+    
+}
+
+.navbar{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.nav-brand{
+    width: 70px;
+   
+}
+
+.nav-option{
+    display: flex;
+    
+    
+}
+.nav-option > div{
+align-content: center;
+
+}
+
+.nav-logo{
+    height: 75px;
+    
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    border: 1px black;
+    padding: 5px;
+    background-color: white;
+    font-style: initial;
+    box-shadow: 0px 0px 2px 2px black;
+    
+}
+
+.Services{
+   margin: 10px;
+   text-align: center;
+
+}
+.text-center{
+    text-align: center;
+}
+.services-head>p{
+
+  
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+  
+.Services-body{
+     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+  
+
+.Service-card{
+height: 400px;
+width:  250px;
+
+
+}
+
+
+
+.card-image{
+margin-left: 45px;
+    height: 120px;
+    width: 120px;
+    color:  #09d851;
+
+}
+
+.card-content>h2{
+    margin-top: 10px;
+    text-align: center;
+
+}
+.card-content>p{
+    margin-top: 30px;
+    color: black;
+    font-style: italic;
+    text-align: justify;
+    
+}
+.product -image{
+    height: 100px;
+    width: 100px;
+}
+
+
+@media screen and (max-width:480px){
+    .banner{
+   height: 200px;
+    
+}
+.product-image{
+    width: 150px !important; 
+    height: 100px !important;
+}   
+}
+
+@media screen and (max-width:720px){
+    .navbar{
+        grid-template-columns: auto;
+        }
+        .product-card{
+            flex-direction: column;
+        }
+
+        .product-body :nth-child(even){
+            flex-direction: column;
+        }
+        
+        
+}
+
+@media screen and (max-width:900px) {
+      
+    .product-card{
+        padding: 5px;
+        
+    }
+    .product-content{
+        padding: 0px 5px;
+      
+    }
+    
+    
+}
+@media screen and (max-width:1000px) {
+    .product-image{
+        width: 500px;
+        height: 300px;
+}   
+
+}
